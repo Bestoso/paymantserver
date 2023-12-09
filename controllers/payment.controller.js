@@ -1,6 +1,6 @@
 const mercadopago = require('mercadopago');
 const uuid = require('uuid'); // Importa la biblioteca uuid
-const HOST = process.env.HOST || 'http://localhost:3000';
+const HOST = process.env.HOST;
 
 // Función para generar un código único
 const generateUniqueCode = () => {
