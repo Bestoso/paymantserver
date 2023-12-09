@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(morgan('dev'));
 
-app.use('/api', require('../router/app.router'));
+app.use('/api', require('./router/app.router'));
 app.get('/', (req, res) => {
     res.send('Hola mundo');
 })
